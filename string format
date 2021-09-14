@@ -1,0 +1,20 @@
+price=45
+print("the price is:",price,"$")
+..........................
+price=45
+txt="the price is {} $".format(price)
+print(txt)
+..........................
+name= 'hafsa qureshi'
+department= 'electronics'
+year= '2nd'
+course= 'iot' 
+bio=("my name is {} doing {} engg enrolled in {} year also doing nothing in {} course" .format(name,department,year,course))  #also run without bracket
+print(bio)
+...........................
+name= 'hafsa qureshi'
+department= 'electronics'
+year= '2nd'
+course= "iot" 
+bio=("my name is {0} doing {1} engg enrolled in {3} year also doing nothing in {2} course" .format(name,department,course,year)) #define indexing,index start from 0
+print(bio)
