@@ -1,0 +1,30 @@
+try:
+    print(x)
+except:
+    print("an exception occurred")
+.................................
+try:
+    number =10/0
+    print(number)
+except:
+    print("invalid number")
+.................................
+while True:
+    a= int(input("enter a number"))
+    try:
+        number =10/a
+        print(number)
+    except:
+        print("invalid number")
+run......
+enter a number1
+10.0
+enter a number5
+2.0
+enter a number10
+1.0
+enter a number8
+1.25
+enter a number0
+invalid number
+    
