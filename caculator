@@ -1,0 +1,17 @@
+a = int(input("enter first digit"))
+b = int(input("enter second digit"))
+operation = str(input("enter the operator"))
+if (operation == '+'):
+    sum = a + b
+    print(sum)
+elif (operation == '-'):
+    subt = a - b 
+    print(subt)
+elif (operation == '*'):
+    mul = a * b
+    print(mul)
+elif (operation == '/'):
+    div = a / b
+    print(div)
+else:
+    print("you chose wrong operation")
