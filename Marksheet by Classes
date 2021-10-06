@@ -1,0 +1,38 @@
+class marksheet:
+  def _init_(self,name,age,semester):
+    self.name=name
+    self.age=age
+    self.semester=semester
+ 
+  def percentage(self,a,b,c,d,e):
+    per = ((a+b+c+d+e)/500)*100
+    print("Name:",self.name)
+    print("Age:",self.age)
+    print("Semester:",self.semester)
+    print("Your percentage is:",per)
+    return per
+
+  def grade(self,per):
+    if (per >= 80):
+      print("A Grade")
+    elif(per >= 70):
+      print("B Grade")
+    elif(per >= 60 ):
+      print("C Grade")
+    elif(per >= 50 ):
+      print("D Grade")
+    else:
+      print("Fail")
+
+
+std_1=marksheet("Hafsa",19,4)
+std_2=marksheet("Tayyaba",20,5)
+std_3=marksheet("Samiya",22,3)
+
+per_1=std_1.percentage(75,67,89,90,87)
+per_2=std_2.percentage(67,87,93,78,80)
+per_3=std_3.percentage(87,63,80,95,76)
+
+std_1.grade(per_1)
+std_2.grade(per_2)
+std_3.grade(per_3)
